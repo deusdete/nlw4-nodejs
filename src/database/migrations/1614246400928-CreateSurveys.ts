@@ -21,7 +21,7 @@ export class CreateSurveys1614246400928 implements MigrationInterface {
                         type: "varchar"
                     },
                     {
-                        name: "created_it",
+                        name: "created_at",
                         type: "timestamp",
                         default: "now()"
                     }

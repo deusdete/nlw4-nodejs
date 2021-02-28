@@ -1,5 +1,6 @@
 import { Connection, createConnection, getConnectionOptions } from 'typeorm'
-
+import dotenv from 'dotenv'
+dotenv.config();
 
 
 export default async (): Promise<Connection> => {

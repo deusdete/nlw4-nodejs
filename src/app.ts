@@ -1,10 +1,9 @@
 import 'reflect-metadata'
 import express from 'express';
-import './database'
 import { router } from './routes';
-import dotenv from 'dotenv'
-dotenv.config();
+import createConnection from './database'
 
+createConnection();
 const app = express();
 
 app.use(express.json());
